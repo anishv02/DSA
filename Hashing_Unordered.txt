@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <unordered_set>
+using namespace std;
+
+int main() {
+    // Write C++ code her
+    unordered_set <int> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(3);
+    if(s.find(6)==s.end()){
+        cout<<"Not Found"<<endl;
+    }
+    else{
+        cout<<"Found"<<endl;
+    }
+    for(auto it=s.begin();it!=s.end();it++){
+        cout<<*it<<endl;
+    }
+    s.clear();
+    cout<<s.size()<<endl;
+
+    return 0;
+}

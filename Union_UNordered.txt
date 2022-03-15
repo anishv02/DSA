@@ -1,0 +1,24 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <unordered_set>
+using namespace std;
+
+int Union(int a[],int b[]){
+    unordered_set <int> set;
+    for(int i=0;i<=3;i++){
+        set.insert(a[i]);
+    }
+    for(int j=0;j<=2;j++){
+        set.insert(b[j]);
+    }
+    return set.size();
+}
+
+int main() {
+    // Write C++ code here
+    int a[] = {5,10,15,5}, b[] = {5,10,4};
+    cout<<Union(a,b)<<endl;
+    
+
+    return 0;
+}
