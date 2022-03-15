@@ -1,0 +1,26 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+string end(string s){
+    
+    if(s.length()==0){
+        return "";
+    }
+    char ch = s[0];
+    string ans = end(s.substr(1));
+    if(ch=='x'){
+        return ans+ch;
+    }
+    return ch+ans;
+    
+}
+
+
+int main() {
+    // Write C++ code here
+    cout<<end("xxxxjduxxhfd");
+    
+
+    return 0;
+}

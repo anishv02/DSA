@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+string Remove(string s){
+    
+    if(s.length()==0){
+        return "";
+    }
+    
+    char ch = s[0];
+    string ans = Remove(s.substr(1));
+    if(ch==ans[0]){
+        return ans;
+    }
+    return ch+ans;
+}
+
+int main() {
+    // Write C++ code here
+    cout<<Remove("aaaaabbbbccccdddeee");
+    
+
+    return 0;
+}

@@ -1,0 +1,24 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int first(int n)
+{
+    return n;
+}
+
+
+int main() {
+    // Write C++ code here
+    int n;
+    cout<<"Enter N";
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        cout<<first(i)<<" ";
+    }
+    
+    
+
+    return 0;
+}

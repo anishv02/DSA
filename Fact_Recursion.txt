@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+
+int Sum(int n)
+{
+    if(n==0)
+    {
+        return 1;
+    }
+    
+    int prevSum = Sum(n-1);
+    return n * prevSum;
+}
+int main() {
+    // Write C++ code here
+    int n;
+    cout<<"ENTER N";
+    cin>>n;
+    cout<<Sum(n);
+    
+
+    return 0;
+}
