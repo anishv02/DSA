@@ -1,0 +1,10 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+x = [64649,44,44,4,1,54,411,64,1,64,6,16]
+for i in range(len(x)):
+    y = i
+    for j in range(i+1,len(x)):
+        if x[y]>x[j]:
+            y = j
+    x[i],x[y] = x[y],x[i]
+print(x)    

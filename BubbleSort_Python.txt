@@ -1,0 +1,12 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+def bubblesort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1],arr[j]
+
+arr = [1,54,64,6,66315,9,3,146,2]
+bubblesort(arr)
+print(arr)
